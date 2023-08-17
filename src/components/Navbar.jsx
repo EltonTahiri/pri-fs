@@ -62,7 +62,7 @@ const Navbar = () => {
 };
 const Container = styled.div`
   width: 100%;
-  background-color: #14042e;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,7 +74,6 @@ const Container = styled.div`
   z-index: 100;
   overflow-x: visible;
   transition: 0.2s;
-  color: white;
   .logo {
     width: 70px;
   }
