@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import logo from "../assets/pri-fs-logo.png";
+import logo from "../assets/PRI-full-logo-png.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -66,7 +66,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 4%;
+  padding: 1% 8%;
   position: fixed;
   top: 0;
   height: 70px;
@@ -75,20 +75,13 @@ const Container = styled.div`
   overflow-x: visible;
   transition: 0.2s;
   .logo {
-    width: 70px;
+    height: 40px;
   }
   .nav-menu {
     display: flex;
     gap: 37px;
     list-style: none;
     align-items: center;
-    li {
-      transition: 0.3s;
-      cursor: pointer;
-    }
-    .activeTab {
-      font-weight: 700;
-    }
   }
   .mobile-menu {
     position: absolute;
