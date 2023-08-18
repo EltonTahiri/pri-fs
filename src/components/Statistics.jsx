@@ -16,6 +16,9 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 4em;
+  @media (max-width: 620px) {
+    flex-direction: column;
+  }
 `;
 
 export default Statistics;
