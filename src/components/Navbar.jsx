@@ -36,12 +36,6 @@ const Navbar = () => {
           Services
         </li>
         <li
-          className={activeTab === "holiday-types" ? "activeTab" : "nonActive"}
-          onClick={() => setActiveTab("holiday-types")}
-        >
-          Pricing
-        </li>
-        <li
           className={activeTab === "about-us" ? "activeTab" : "nonActive"}
           onClick={() => setActiveTab("about-us")}
         >
