@@ -27,15 +27,11 @@ code {
 }
 
 :root {
-  --primaryColor: #4fc0d6;
-  --primaryColorDark: #2ca0b8;
-  --primaryColorLight: #73bbc9b6;
-  --secondaryColor: #f1d4e5;
+  --primaryColor: #3280ad;
   --primaryBackgroundColor: #ececec;
   --secondaryBackgroundColor: #dadada;
   --fontPrimaryColor: #535151;
   --fontSecondaryColor: #616161;
-  --navbarBg: white;
   --backgroundGradient: radial-gradient(
     circle at 10% 45%,
     #64a1e2 2%,
@@ -66,11 +62,6 @@ code {
     rgb(86, 96, 240) 41.2%,
     rgb(86, 183, 240) 41.2%,
     rgb(31, 67, 230) 100.2%
-  );
-  --gradientBackground3: -webkit-linear-gradient(
-    109.6deg,
-    rgb(255, 255, 255) 41.2%,
-    rgb(223, 234, 250) 100.2%
   );
 }
 
