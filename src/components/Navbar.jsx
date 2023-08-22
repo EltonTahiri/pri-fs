@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../assets/PRI-full-logo-png.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -23,30 +24,36 @@ const Navbar = () => {
         onClick={handleToggle}
         className={toggle ? "nav-menu active" : "nav-menu"}
       >
-        <li
-          className={activeTab === "home" ? "activeTab" : "nonActive"}
-          onClick={() => setActiveTab("home")}
-        >
-          Home
-        </li>
+        <Link to={"/"} className="link-styles">
+          <li
+            className={activeTab === "home" ? "activeTab" : "nonActive"}
+            onClick={() => setActiveTab("home")}
+          >
+            Home
+          </li>
+        </Link>
         <li
           className={activeTab === "destinations" ? "activeTab" : "nonActive"}
           onClick={() => setActiveTab("destinations")}
         >
           Services
         </li>
-        <li
-          className={activeTab === "about-us" ? "activeTab" : "nonActive"}
-          onClick={() => setActiveTab("about-us")}
-        >
-          About Us
-        </li>
-        <li
-          className={activeTab === "contact-us" ? "activeTab" : "nonActive"}
-          onClick={() => setActiveTab("contact-us")}
-        >
-          Contact Us
-        </li>
+        <Link to={"/aboutus"} className="link-styles">
+          <li
+            className={activeTab === "about-us" ? "activeTab" : "nonActive"}
+            onClick={() => setActiveTab("about-us")}
+          >
+            About Us
+          </li>
+        </Link>
+        <Link to={"/contact-us"} className="link-styles">
+          <li
+            className={activeTab === "contact-us" ? "activeTab" : "nonActive"}
+            onClick={() => setActiveTab("contact-us")}
+          >
+            Contact Us
+          </li>
+        </Link>
       </ul>
       <div className="mobile-menu" onClick={handleToggle}>
         {toggle ? <FaTimes className="icon" /> : <FaBars className="icon" />}
