@@ -32,12 +32,14 @@ const Navbar = () => {
             Home
           </li>
         </Link>
+        <Link to={"/services"} className="link-styles">
         <li
           className={activeTab === "destinations" ? "activeTab" : "nonActive"}
           onClick={() => setActiveTab("destinations")}
         >
           Services
         </li>
+        </Link>
         <Link to={"/aboutus"} className="link-styles">
           <li
             className={activeTab === "about-us" ? "activeTab" : "nonActive"}
