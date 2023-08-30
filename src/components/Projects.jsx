@@ -115,6 +115,34 @@ const Container = styled.div`
       }
     }
   }
+  @media (max-width: 1000px) {
+    .swiper {
+      .slide {
+        width: 98%;
+        padding: 3em 2em;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .swiper {
+      .slide {
+        flex-direction: column;
+        text-align: center;
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .swiper {
+      .slide {
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
 `;
 
 export default Projects;

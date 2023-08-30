@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const Statistics = () => {
+  
+  const { t } = useTranslation();
   return (
     <Container>
-      <p>70+ Clients</p>
-      <p>Professional Services</p>
-      <p>3+ Years of Experince</p>
+      <p>{t('statisticsClients')}</p>
+      <p>{t('statisticsServices')}</p>
+      <p>{t('statisticsExperience')}</p>
     </Container>
   );
 };

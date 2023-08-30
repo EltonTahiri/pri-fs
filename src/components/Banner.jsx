@@ -1,25 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import bannerImg from "../assets/homePageAssets/bannerImg.png";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 const Banner = () => {
+
+  const { t } = useTranslation();
+  
   return (
     <Container>
       <div className="leftSide">
-        <h1>
-          Cleaning Excellence: <br /> Where Hygiene Meets Happiness
-        </h1>
-        <p>
-          Experience the pinnacle of cleanliness as we merge hygiene with
-          happiness
-        </p>
-        <button>BOOK NOW</button>
+      <h1>{t('bannerTitle')}</h1>
+        <p>{t('bannerDescription')}</p>
+        <LanguageSelector />
       </div>
       <img className="bannerImg" src={bannerImg} alt="" />
     </Container>
   );
 };
-const Container = styled.div`
+const Container = styled.div` 
   padding: 0 7%;
   padding-top: 1em;
   display: flex;

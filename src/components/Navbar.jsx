@@ -3,6 +3,7 @@ import styled from "styled-components";
 import logo from "../assets/PRI-full-logo-png.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import LanguageSelector from "./LanguageSelector";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -56,6 +57,7 @@ const Navbar = () => {
             Contact Us
           </li>
         </Link>
+        <LanguageSelector />
       </ul>
       <div className="mobile-menu" onClick={handleToggle}>
         {toggle ? <FaTimes className="icon" /> : <FaBars className="icon" />}
