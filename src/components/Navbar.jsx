@@ -49,7 +49,7 @@ const Navbar = () => {
             About Us
           </li>
         </Link>
-        <Link to={"/contact-us"} className="link-styles">
+        <Link to={"/contactus"} className="link-styles">
           <li
             className={activeTab === "contact-us" ? "activeTab" : "nonActive"}
             onClick={() => setActiveTab("contact-us")}
