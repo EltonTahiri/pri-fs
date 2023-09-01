@@ -52,7 +52,19 @@
     "h2ClientApproach": "Approccio incentrato sul cliente",
     "pCCP": "La vostra soddisfazione è al centro di tutto ciò che facciamo in PRI Facility Services. Ascoltiamo le tue esigenze, comprendiamo le tue preferenze e personalizziamo i nostri piani di pulizia di conseguenza. Il tuo spazio per noi non è solo un lavoro; è una tela in cui creiamo pulizia, conforto e gioia.",
     "h2Sustain": "Sostenibilità ed ecocompatibilità",
-    "pSustain": "In qualità di custodi dell'ambiente, siamo orgogliosi delle nostre pratiche ecocompatibili presso PRI Facility Services. La nostra scelta di prodotti per la pulizia riflette il nostro impegno sia per il vostro benessere che per la salute del pianeta. Pulire con cura è una responsabilità che abbracciamo con orgoglio."
+    "pSustain": "In qualità di custodi dell'ambiente, siamo orgogliosi delle nostre pratiche ecocompatibili presso PRI Facility Services. La nostra scelta di prodotti per la pulizia riflette il nostro impegno sia per il vostro benessere che per la salute del pianeta. Pulire con cura è una responsabilità che abbracciamo con orgoglio.",
   
+    "h3Location": "I INDIRIZZO",
+    "h3Phone": "NUMERO DI TELEFONO",
+
+    "h2Contact": "CONTATTACI",
+    "nameEnter": "Inserisci il tuo nome",
+    "emailEnter": "Inserisci il tuo indirizzo email",
+    "messageEnter": "Inserisci il tuo messaggio",
+
+    "home": "Casa",
+    "services": "Servizi",
+    "About Us": "Chi siamo",
+    "Contact Us": "Contattaci"
   }
   

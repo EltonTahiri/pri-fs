@@ -5,9 +5,12 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { AiFillPrinter } from "react-icons/ai";
 import emailjs from '@emailjs/browser';
+import { useTranslation } from "react-i18next";
 
 
 const ContactUs = () => {
+
+    const { t } = useTranslation();
 
     const form = useRef();
 
@@ -27,36 +30,31 @@ const ContactUs = () => {
       <div className="items">
         <div className="item">
           <HiLocationMarker className="icon" />
-          <h3>OUR MAIN OFFICE</h3>
+          <h3>{t('h3Location')}</h3>
           <p>
-            Random 7788 <br />
-            Bern
+            Werkstrasse 10 <br />
+            5080 Laufenburg
           </p>
         </div>
         <div className="item">
           <BsFillTelephoneFill className="icon" />
-          <h3>PHONE NUMBER</h3>
-          <p>+1 123 123 1234</p>
-        </div>
-        <div className="item">
-          <MdEmail className="icon" />
-          <h3>FAX</h3>
-          <p>1-123-456-7890</p>
+          <h3>{t('h3Phone')}</h3>
+          <p>0041 797809622</p>
         </div>
         <div className="item">
           <AiFillPrinter className="icon" />
           <h3>EMAIL</h3>
-          <p>pri-fs@gmail.com</p>
+          <p>beharjetullahu@pri-fs.ch</p>
         </div>
       </div>
       <form ref={form} onSubmit={sendEmail}>
-        <h2>CONTACT US</h2>
-        <input type="text" placeholder="Enter Your Name..." name="user_name"/>
-        <input type="email" placeholder="Enter Your Email..." name="user_email" />
+        <h2>{t('h2Contact')}</h2>
+        <input type="text" placeholder={t('nameEnter')} name="user_name"/>
+        <input type="email" placeholder={t('emailEnter')} name="user_email" />
         <textarea
           cols="30"
           rows="10"
-          placeholder="Enter Your Message or concern..." name="message"
+          placeholder={t('messageEnter')} name="message"
         ></textarea>
         <button>SUBMIT</button>
       </form>

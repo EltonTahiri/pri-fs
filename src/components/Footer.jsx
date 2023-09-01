@@ -14,13 +14,6 @@ const Footer = () => {
       </div>
       <div className="columns">
         <div className="column">
-          <h3>Links</h3>
-          <p>Home</p>
-          <p>Services</p>
-          <p>About Us</p>
-          <p>Contact Us</p>
-        </div>
-        <div className="column">
           <h3>Support</h3>
           <p>Contact</p>
           <p>Support Center</p>
@@ -28,9 +21,9 @@ const Footer = () => {
         </div>
         <div className="column">
           <h3>Contact</h3>
-          <p>+383 12 123 123</p>
-          <p>pri-fs@gmail.com</p>
-          <p>Elton Tahiri</p>
+          <p>0041 797809622</p>
+          <p>beharjetullahu@pri-fs.ch</p>
+          <p>Behar Jetullahu</p>
         </div>
         <div className="column iconColumn">
           <AiFillInstagram className="icon" />
@@ -39,6 +32,7 @@ const Footer = () => {
           <SiGmail className="icon" />
         </div>
       </div>
+      <p className="copyright">©Elton Tahiri All Rights Reserved</p>
     </Container>
   );
 };
@@ -50,8 +44,15 @@ const Container = styled.div`
   padding: 4em 4%;
   gap: 1em;
   color: white;
+  .copyright {
+    position: absolute;
+    margin-top: 11em;
+    z-index: 10;
+  }
   .logo {
     img {
+      display: flex;
+      margin: auto;
       width: 130px;
     }
   }

@@ -56,7 +56,20 @@
     "pCCP": "Your satisfaction is at the heart of everything we do at PRI Facility Services. We listen to your needs, understand your preferences, and tailor our cleaning plans accordingly. Your space isn't just a job to us; it's a canvas where we create cleanliness, comfort, and joy.",
 
     "h2Sustain": "Sustainability and Eco-Friendliness",
-    "pSustain": "As stewards of the environment, we take pride in our eco-friendly practices at PRI Facility Services. Our choice of cleaning products reflects our commitment to both your well-being and the planet's health. Cleaning with care is a responsibility we embrace with pride."
+    "pSustain": "As stewards of the environment, we take pride in our eco-friendly practices at PRI Facility Services. Our choice of cleaning products reflects our commitment to both your well-being and the planet's health. Cleaning with care is a responsibility we embrace with pride.",
+
+    "h3Location": "LOCATION",
+    "h3Phone": "PHONE NUMBER",
+
+    "h2Contact": "CONTACT US",
+    "nameEnter": "Enter Your Name",
+    "emailEnter": "Enter Your Email",
+    "messageEnter": "Enter Your Message",
+
+    "home": "Home",
+    "services": "Services",
+    "About Us": "About Us",
+    "Contact Us": "Contact Us"
 
 
   }

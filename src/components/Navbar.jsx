@@ -4,8 +4,12 @@ import logo from "../assets/PRI-full-logo-png.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+
+    const { t } = useTranslation();
+
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => setToggle(!toggle);
   const [activeTab, setActiveTab] = useState("home");
@@ -30,7 +34,7 @@ const Navbar = () => {
             className={activeTab === "home" ? "activeTab" : "nonActive"}
             onClick={() => setActiveTab("home")}
           >
-            Home
+            {t('home')}
           </li>
         </Link>
         <Link to={"/services"} className="link-styles">
@@ -38,7 +42,7 @@ const Navbar = () => {
           className={activeTab === "destinations" ? "activeTab" : "nonActive"}
           onClick={() => setActiveTab("destinations")}
         >
-          Services
+        {t('services')}
         </li>
         </Link>
         <Link to={"/aboutus"} className="link-styles">
@@ -46,7 +50,7 @@ const Navbar = () => {
             className={activeTab === "about-us" ? "activeTab" : "nonActive"}
             onClick={() => setActiveTab("about-us")}
           >
-            About Us
+          {t('About Us')}
           </li>
         </Link>
         <Link to={"/contactus"} className="link-styles">
@@ -54,10 +58,9 @@ const Navbar = () => {
             className={activeTab === "contact-us" ? "activeTab" : "nonActive"}
             onClick={() => setActiveTab("contact-us")}
           >
-            Contact Us
+          {t('Contact Us')}
           </li>
         </Link>
-        <LanguageSelector />
       </ul>
       <div className="mobile-menu" onClick={handleToggle}>
         {toggle ? <FaTimes className="icon" /> : <FaBars className="icon" />}

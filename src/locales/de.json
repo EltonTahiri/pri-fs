@@ -58,7 +58,19 @@
     "pCCP": "Ihre Zufriedenheit steht im Mittelpunkt unseres Handelns bei PRI Facility Services. Wir hören auf Ihre Bedürfnisse, verstehen Ihre Vorlieben und passen unsere Reinigungspläne entsprechend an. Ihr Raum ist für uns nicht nur ein Job; Es ist eine Leinwand, auf der wir Sauberkeit, Komfort und Freude schaffen.",
 
     "h2Sustain": "Nachhaltigkeit und Umweltfreundlichkeit",
-    "pSustain": "Als Umweltschützer sind wir stolz auf unsere umweltfreundlichen Praktiken bei PRI Facility Services. Unsere Auswahl an Reinigungsprodukten spiegelt unser Engagement für Ihr Wohlbefinden und die Gesundheit des Planeten wider. Sorgfältiges Reinigen ist eine Verantwortung, die wir mit Stolz annehmen."
+    "pSustain": "Als Umweltschützer sind wir stolz auf unsere umweltfreundlichen Praktiken bei PRI Facility Services. Unsere Auswahl an Reinigungsprodukten spiegelt unser Engagement für Ihr Wohlbefinden und die Gesundheit des Planeten wider. Sorgfältiges Reinigen ist eine Verantwortung, die wir mit Stolz annehmen.",
 
+    "h3Location": "ADRESSE",
+    "h3Phone": "TELEFONNUMMER",
+
+    "h2Contact": "KONTAKTIERE UNS",
+    "nameEnter": "Gib deinen Namen ein",
+    "emailEnter": "Geben sie ihre E-Mail Adresse ein",
+    "messageEnter": "Gib deine Nachricht ein",
+
+    "home": "Heim",
+    "services": "Dienstleistungen",
+    "About Us": "Über uns",
+    "Contact Us": "Kontaktiere uns"
   }
   
