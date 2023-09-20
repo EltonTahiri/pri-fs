@@ -1,0 +1,34 @@
+/* LanguageSelector.css */
+
+/* Common styles for all screen sizes */
+.language-selector {
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  
+  .flag-icons {
+    display: flex;
+    gap: 10px; /* Adjust the gap between the flags as needed */
+  }
+  
+  .flag-icon {
+    width: 30px; /* Adjust the flag width as needed */
+    height: auto;
+  }
+  
+  .flag-icon.active {
+    border: 2px solid #007bff; /* Add a border to the active flag, if desired */
+  }
+  
+  /* Media query for smaller screens (e.g., phones) */
+  @media (max-width: 768px) {
+    .flag-icons {
+      flex-direction: row; /* Revert to horizontal layout */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+    }
+    .language-selector{
+        justify-content: center;
+    }
+  }
+  

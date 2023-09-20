@@ -46,7 +46,7 @@ const Services = () => {
           <p>{t('pPost')}</p>
         </div>
         <div className="item">
-          <h1>07</h1>
+          <h1>08</h1>
           <h2>{t('h3Affordable')}</h2>
           <p>{t('pAffordable')}</p>
         </div>

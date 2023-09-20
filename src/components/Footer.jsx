@@ -4,8 +4,12 @@ import logo from "../assets/pri-fs-logo.png";
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+
+  const { t } = useTranslation();
+
   return (
     <Container>
       <div className="logo">
@@ -14,16 +18,12 @@ const Footer = () => {
       </div>
       <div className="columns">
         <div className="column">
-          <h3>Support</h3>
-          <p>Contact</p>
-          <p>Support Center</p>
-          <p>Feedback</p>
         </div>
         <div className="column">
-          <h3>Contact</h3>
-          <p>0041 797809622</p>
-          <p>beharjetullahu@pri-fs.ch</p>
-          <p>Behar Jetullahu</p>
+          <h3>{t('Contact Us')}</h3>
+          <p>0041 62 874 10 00</p>
+          <p>info@pri-fs.ch</p>
+          <p>B.Jetullahu</p>
         </div>
         <div className="column iconColumn">
           <AiFillInstagram className="icon" />
