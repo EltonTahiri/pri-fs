@@ -26,11 +26,20 @@ const Footer = () => {
           <p>B.Jetullahu</p>
         </div>
         <div className="column iconColumn">
-          <AiFillInstagram className="icon" />
-          <BsFacebook className="icon" />
-          <AiFillTwitterCircle className="icon" />
-          <SiGmail className="icon" />
-        </div>
+  <a href="https://www.instagram.com/prifacility/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+    <AiFillInstagram className="icon" />
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=61551476410117" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+    <BsFacebook className="icon" />
+  </a>
+  <a href="https://twitter.com/prifacility" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+    <AiFillTwitterCircle className="icon" />
+  </a>
+</div>
+
+
+
+
       </div>
       <p className="copyright">©Elton Tahiri All Rights Reserved</p>
     </Container>
