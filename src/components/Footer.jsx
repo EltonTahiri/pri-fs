@@ -35,6 +35,7 @@ const Footer = () => {
   <a href="https://twitter.com/prifacility" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
     <AiFillTwitterCircle className="icon" />
   </a>
+  <SiGmail className="icon" />
 </div>
 
 
@@ -55,7 +56,7 @@ const Container = styled.div`
   color: white;
   .copyright {
     position: absolute;
-    margin-top: 11em;
+    margin-top: 1em;
     z-index: 10;
   }
   .logo {
