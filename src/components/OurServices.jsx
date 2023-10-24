@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import background from "../assets/backgroundpri.jpeg";
+import picture from "../assets/picture.jpeg"
 
 const OurServices = () => {
+  const { t } = useTranslation();
 
-  const {t} = useTranslation();
-  
   return (
     <Container>
-      <div className="color"></div>
       <h2 className="title">{t('ourServices')}</h2>
       <div className="items">
         <div className="item">
@@ -55,12 +55,20 @@ const OurServices = () => {
     </Container>
   );
 };
+
 const Container = styled.div`
-  padding: 7em 4%;
+  padding: 5em 4%;
+  padding-top: 0em;
+  position: relative;
+  overflow: hidden;
+  
   .title {
     margin: 3em 0 3em 0;
     font-weight: 600;
     text-align: center;
+    padding: 20px; /* Add some padding to the title */
+    position: relative; /* Ensure the title is above the background */
+    z-index: 2; /* Set a higher z-index for the title */
   }
   .items {
     display: flex;
@@ -68,6 +76,8 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     gap: 3em;
+    position: relative;
+    z-index: 1;
     .item {
       position: relative;
       width: 340px;
@@ -80,6 +90,7 @@ const Container = styled.div`
       padding: 20px;
       cursor: pointer;
       transition: 0.4s;
+      background: white; /* Set the white background */
       :hover {
         background: var(--primaryColor);
         h1 {
@@ -118,6 +129,28 @@ const Container = styled.div`
       }
     }
   }
+
+  &::before {
+    content: "";
+    background-image: url(${background});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  @media (max-width: 768px) {
+  &::before {
+    background-image: none; /* Remove background image for mobile */
+  }
+}
+
 `;
 
 export default OurServices;

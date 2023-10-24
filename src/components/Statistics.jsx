@@ -9,7 +9,6 @@ const Statistics = () => {
     <Container>
       <p>{t('statisticsClients')}</p>
       <p>{t('statisticsServices')}</p>
-      <p>{t('statisticsExperience')}</p>
     </Container>
   );
 };

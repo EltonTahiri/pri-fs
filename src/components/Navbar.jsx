@@ -54,17 +54,6 @@ const Navbar = () => {
           {t('About Us')}
           </li>
         </Link>
-
-        <Link to={"/jobs"} className="link-styles">
-          <li 
-            className={activeTab ==="jobs" ? "activeTab" : "nonActive"}
-            onClick={() => setActiveTab("jobs")}
-          >
-              Jobs
-          </li>
-        
-        </Link>
-
         <Link to={"/contactus"} className="link-styles">
           <li
             className={activeTab === "contact-us" ? "activeTab" : "nonActive"}
