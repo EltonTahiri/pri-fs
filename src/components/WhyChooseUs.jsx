@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import video from '../assets/frontvideo.mp4';
 
 const WhyChooseUs = () => {
 
@@ -8,6 +9,12 @@ const WhyChooseUs = () => {
 
   return (
     <Container>
+        <div className="video">
+        <video autoPlay loop muted>
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+        </div>
       <h2 className="title">{t('whyChoose')}</h2>
       <div className="items">
         <div className="item">
@@ -85,6 +92,16 @@ const Container = styled.div`
     font-weight: 600;
     text-align: center;
   }
+  .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  video{
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+  }
   .items {
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +131,14 @@ const Container = styled.div`
       }
       :hover {
         box-shadow: 0 0 12px 2px #c9c9c9;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .video {
+      video {
+        height: 100%;
+        width: 100%;
       }
     }
   }
