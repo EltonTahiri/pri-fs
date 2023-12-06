@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import AboutUs from "./routes/AboutUs";
 import ContactUs from "./routes/ContactUs";
 import Services from "./routes/Services";
-import JobApplication from "./components/JobApplication";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -19,7 +18,6 @@ function App() {
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/services' element={<Services />} />
         <Route path='/contactus' element={<ContactUs />} />
-        <Route path='/jobs' element={<JobApplication />} />
       </Routes>
       <Footer />
     </div>
