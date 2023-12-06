@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
   return (
     <Container>
         <div className="video">
-        <video autoPlay loop muted>
+        <video autoPlay loop muted playsInline>
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
