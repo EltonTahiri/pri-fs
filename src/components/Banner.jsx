@@ -3,6 +3,7 @@ import styled from "styled-components";
 import bannerImg from "../assets/homePageAssets/bannerImg.png";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
+import gmp from "../assets/gmp.png"
 
 const Banner = () => {
 
@@ -13,6 +14,7 @@ const Banner = () => {
       <div className="leftSide">
       <h1>{t('bannerTitle')}</h1>
         <p>{t('bannerDescription')}</p>
+        <img  src={gmp} alt="" className="gmp"/>
         <LanguageSelector />
       </div>
       <img className="bannerImg" src={bannerImg} alt="" />
@@ -27,6 +29,9 @@ const Container = styled.div`
   align-items: center;
   background: var(--backgroundGradient4);
   gap: 2em;
+  .gmp{
+    height: 100px;
+  }
   .leftSide {
     h1 {
       font-size: 3em;

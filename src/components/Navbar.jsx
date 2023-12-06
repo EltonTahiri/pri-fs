@@ -7,6 +7,7 @@ import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
 
 
+
 const Navbar = () => {
 
     const { t } = useTranslation();
@@ -23,7 +24,6 @@ const Navbar = () => {
         src={logo}
         alt=""
       />
-
       <div className={toggle ? "blur active" : "blur"}></div>
 
       <ul
