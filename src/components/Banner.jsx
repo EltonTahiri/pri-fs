@@ -14,7 +14,7 @@ const Banner = () => {
       <div className="leftSide">
       <h1>{t('bannerTitle')}</h1>
         <p>{t('bannerDescription')}</p>
-        <img  src={gmp} alt="" className="gmp"/>
+        {/* <img  src={gmp} alt="" className="gmp"/> */}
         <LanguageSelector />
       </div>
       <img className="bannerImg" src={bannerImg} alt="" />
