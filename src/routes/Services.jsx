@@ -52,7 +52,7 @@ const Services = () => {
         </div>
       </div>
     </Container>
-  );
+  );  
 };
 const Container = styled.div`
   padding: 1em 4%;
