@@ -5,9 +5,9 @@ import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-
   const { t } = useTranslation();
 
   return (
@@ -17,30 +17,48 @@ const Footer = () => {
         <p>Where Hygiene Meets Happiness!</p>
       </div>
       <div className="columns">
+        <div className="column"></div>
         <div className="column">
-        </div>
-        <div className="column">
-          <h3>{t('Contact Us')}</h3>
+          <h3>{t("Contact Us")}</h3>
           <p>0041 62 874 10 00</p>
           <p>info@pri-fs.ch</p>
           <p>B.Jetullahu</p>
+          <Link to="/data-protection" style={{ textDecoration: 'none' }}>
+            <p id="Datenschutzerklärung">Datenschutzerklärung</p>
+          </Link>
+
+          <Link to="/impressum" style={{ textDecoration: 'none' }}>
+            <p id="Impressum">Impressum</p>
+          </Link>
+
         </div>
         <div className="column iconColumn">
-  <a href="https://www.instagram.com/prifacility/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
-    <AiFillInstagram className="icon" />
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=61551476410117" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
-    <BsFacebook className="icon" />
-  </a>
-  <a href="https://twitter.com/prifacility" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
-    <AiFillTwitterCircle className="icon" />
-  </a>
-  <SiGmail className="icon" />
-</div>
-
-
-
-
+          <a
+            href="https://www.instagram.com/prifacility/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white" }}
+          >
+            <AiFillInstagram className="icon" />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61551476410117"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white" }}
+          >
+            <BsFacebook className="icon" />
+          </a>
+          <a
+            href="https://twitter.com/prifacility"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white" }}
+          >
+            <AiFillTwitterCircle className="icon" />
+          </a>
+          <SiGmail className="icon" />
+        </div>
       </div>
       <p className="copyright">©Elton Tahiri All Rights Reserved</p>
     </Container>
@@ -112,6 +130,12 @@ const Container = styled.div`
         flex-direction: row;
       }
     }
+  }
+  #Datenschutzerklärung {
+    color: white;
+  }
+  #Impressum {
+    color: white;
   }
 `;
 

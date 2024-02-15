@@ -7,6 +7,8 @@ import ContactUs from "./routes/ContactUs";
 import Services from "./routes/Services";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import DataProtection from "./routes/DataProtection";
+import Impressum from "./routes/Impressum";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/services' element={<Services />} />
         <Route path='/contactus' element={<ContactUs />} />
+        <Route path='/data-protection' element={<DataProtection />} />
+        <Route path='/impressum' element={<Impressum />} />
       </Routes>
       <Footer />
     </div>
